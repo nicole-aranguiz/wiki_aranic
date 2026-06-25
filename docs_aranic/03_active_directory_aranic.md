@@ -18,3 +18,4 @@ Se creó el grupo `G-Ventas` y se incorporaron los usuarios creados anteriorment
 ![Creación grupo](img_aranic/11.%20creacion%20grupo.jpg)
 ![Usuario incorporado al grupo](img_aranic/11.%20usuario%20incorporado.jpg)
 ![Comprobación de miembros](img_aranic/11.%20comprueba%20miembros.jpg)
+
