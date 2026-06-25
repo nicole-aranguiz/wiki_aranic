@@ -35,7 +35,7 @@ export default function Inicio() {
   const [abierto, setAbierto] = useState(null);
 
   return (
-    <SeccionContenido titulo="01. Inicio: Servidor (Bloque A)">
+    <SeccionContenido titulo="01. Portada y topología">
       <p className="mb-6 text-pink-700">
         Esta es la base de todo el laboratorio. Aquí documento los pasos iniciales para dejar mi servidor SRV-DC01 listo, configurado y conectado a la red del lab.
       </p>

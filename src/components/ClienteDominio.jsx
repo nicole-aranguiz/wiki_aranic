@@ -1,34 +1,24 @@
 import { useState } from 'react';
 import SeccionContenido from './SeccionContenido';
 
-export default function ActiveDirectory() {
+export default function ClienteDominio() {
   const [abierto, setAbierto] = useState(null);
 
   const pasos = [
     { 
-      titulo: "8. Acceso a Consola de Administración", 
-      desc: "Se accedió a la herramienta de gestión mediante: Administrador del servidor → Herramientas → Usuarios y equipos de Active Directory.", 
-      imgs: ["/docs_aranic/img_aranic/8. Active directory.jpg"] 
+      titulo: "12. Instalación de Rol DHCP", 
+      desc: "Se instaló el rol de servidor DHCP para automatizar la asignación de direcciones IP. Tras finalizar, se autorizó el servidor en AD DS.", 
+      imgs: ["/docs_aranic/img_aranic/12. DHCP instalacion.jpg", "/docs_aranic/img_aranic/12. Configuracion terminada.jpg"] 
     },
     { 
-      titulo: "9. Creación de Unidad Organizativa (OU)", 
-      desc: "Se creó la OU 'Ventas' para organizar los objetos del dominio.", 
-      imgs: ["/docs_aranic/img_aranic/9. Ventas.jpg"] 
-    },
-    { 
-      titulo: "10. Creación de Usuarios", 
-      desc: "Se crearon dos usuarios en la OU 'Ventas'. Se desmarcó la opción 'el usuario debe cambiar la contraseña en el próximo inicio' para efectos del laboratorio.", 
-      imgs: ["/docs_aranic/img_aranic/10. desmarcar .jpg", "/docs_aranic/img_aranic/10. usuarios creados.jpg"] 
-    },
-    { 
-      titulo: "11. Gestión de Grupos y Pertenencia", 
-      desc: "Se creó el grupo 'G-Ventas' y se incorporaron los usuarios creados anteriormente.", 
-      imgs: ["/docs_aranic/img_aranic/11. creacion grupo.jpg", "/docs_aranic/img_aranic/11. usuario incorporado.jpg", "/docs_aranic/img_aranic/11. comprueba miembros.jpg"] 
+      titulo: "13. Configuración de Ámbito (Scope)", 
+      desc: "Se definió el rango de direcciones (192.168.10.50 a 192.168.10.100) y opciones de red (DNS 192.168.10.10, Dominio inacap.local).", 
+      imgs: ["/docs_aranic/img_aranic/13. herramientas DHCP.jpg", "/docs_aranic/img_aranic/13. finalizacion DHCP herramientas.jpg"] 
     }
   ];
 
   return (
-    <SeccionContenido titulo="03. Dominio y Objetos">
+    <SeccionContenido titulo="04. Cliente en el dominio.">
       <div className="space-y-3">
         {pasos.map((paso, i) => (
           <div key={i} className="border border-pink-200 rounded-lg overflow-hidden bg-white shadow-sm">

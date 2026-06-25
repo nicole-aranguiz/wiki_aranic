@@ -4,6 +4,9 @@ import Inicio from './components/Inicio';
 import Instalacion from './components/Instalacion';
 import ActiveDirectory from './components/ActiveDirectory';
 import Prompts from './components/Prompts';
+import ClienteDominio from './components/ClienteDominio'; 
+
+
 
 export default function App() {
   const [seccionActiva, setSeccionActiva] = useState('inicio');
@@ -47,6 +50,7 @@ export default function App() {
           {seccionActiva === 'instalacion' && <Instalacion />}
           {seccionActiva === 'ad' && <ActiveDirectory />}
           {seccionActiva === 'prompts' && <Prompts />}
+          {seccionActiva === 'cliente' && <ClienteDominio />}
         </main>
       </div>
     </div>

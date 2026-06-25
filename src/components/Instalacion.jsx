@@ -18,7 +18,7 @@ export default function Instalacion() {
   ];
 
   return (
-    <SeccionContenido titulo="02. Instalación">
+    <SeccionContenido titulo="02. Instalación y Config. Básica">
       <div className="space-y-3">
         {pasos.map((paso, i) => (
           <div key={i} className="border border-pink-200 rounded-lg overflow-hidden bg-white shadow-sm">
