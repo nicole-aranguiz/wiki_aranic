@@ -1,19 +1,31 @@
-/* Estilo base para tu Wiki */
+/* src/App.css */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@400;500;600;700&display=swap');
+
 body {
-  font-family: sans-serif;
   margin: 0;
-  padding: 40px;
-  background-color: #f4f7f6;
-  color: #333;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  /* Fondo degradado suave para que resalte el efecto vidrio */
+  background: linear-gradient(135deg, #fff5f8 0%, #ffeaf1 100%);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-h1 {
-  color: #2c3e50;
-  border-bottom: 2px solid #3498db;
-  padding-bottom: 10px;
+.titulo-principal {
+  font-family: 'Pacifico', cursive;
 }
 
-p {
-  line-height: 1.6;
-  font-size: 1.1rem;
+/* Efecto de vidrio más definido */
+.glass-card {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(190, 24, 93, 0.1);
+}
+
+/* Para que la barra lateral resalte más */
+.glass-aside {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
 }
