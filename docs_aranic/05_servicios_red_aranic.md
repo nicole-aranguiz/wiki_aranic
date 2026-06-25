@@ -1,23 +1,21 @@
 # 05. Incorporación al Dominio (Bloque E)
 
 ## 14. Configuración del Cliente
-Se creó la máquina virtual **PC01** con Windows 10 Pro, configurando el adaptador de red en la red interna `redlab` para permitir la comunicación con el controlador de dominio.
+Se creó la máquina virtual PC01 con Windows 10 Pro, configurando el adaptador de red en la red interna redlab para permitir la comunicación con el controlador de dominio.
 
-![Configuración red PC01](img_aranic/14.%20PC01%20redlab.jpg)
+Para qué sirve: El uso de la red interna redlab es indispensable para aislar el tráfico de red del laboratorio. Al configurar PC01 aquí, garantizamos que el cliente pueda localizar al servidor de dominio sin interferencias externas, manteniendo un entorno de pruebas controlado.
 
-## 15. Verificación de Red
-Se ejecutó `ipconfig` en el cliente, confirmando la recepción exitosa de una dirección IP desde el servidor DHCP (`192.168.10.x`) y la correcta configuración del DNS.
+15. Verificación de Red
+Se ejecutó ipconfig en el cliente, confirmando la recepción exitosa de una dirección IP desde el servidor DHCP (192.168.10.x) y la correcta configuración del DNS.
 
-![Verificación IP vía DHCP](img_aranic/15.%20resultado%20ejec%20ipconfig.jpg)
+Para qué sirve: Verificar la asignación de IP es el primer paso de diagnóstico; confirmar que el cliente recibe la IP del ámbito DHCP y la dirección del DNS del controlador de dominio asegura que la infraestructura de servicios de red está operando correctamente antes de intentar la unión.
 
-## 16. Sincronización Temporal
-Se validó la coincidencia de fecha y hora entre el controlador de dominio (`SRV-DC01`) y el cliente (`PC01`) para garantizar la integridad de las credenciales durante el proceso de unión.
+16. Sincronización Temporal
+Se validó la coincidencia de fecha y hora entre el controlador de dominio (SRV-DC01) y el cliente (PC01) para garantizar la integridad de las credenciales durante el proceso de unión.
 
-![Fecha servidor](img_aranic/16.%20fecha%20DVC.jpg)
-![Hora cliente](img_aranic/16.%20hora%20pc.jpg)
+Para qué sirve: La sincronización horaria es crítica en entornos con Active Directory, ya que el protocolo Kerberos, utilizado para la autenticación, requiere que la diferencia de tiempo entre cliente y servidor sea mínima (generalmente menor a 5 minutos) para evitar errores de autenticación por "ataques de reproducción" (replay attacks).
 
-## 17. Unión al Dominio
-Se procedió a unir el equipo al dominio `inacap.local`. Tras las credenciales administrativas, se completó la unión y el reinicio del equipo.
+17. Unión al Dominio
+Se procedió a unir el equipo al dominio inacap.local. Tras las credenciales administrativas, se completó la unión y el reinicio del equipo.
 
-![Unión al dominio](img_aranic/17.%20unir%20dominio.jpg)
-![Verificación de dominio](img_aranic/17.%20verificacion%20final%20dominio.jpg)
+Para qué sirve: La unión al dominio permite que la identidad de la máquina sea gestionada por Active Directory, otorgando al equipo acceso a recursos de red compartidos, políticas de grupo (GPO) y permitiendo el inicio de sesión centralizado con cuentas de dominio.

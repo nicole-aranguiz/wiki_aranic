@@ -5,27 +5,26 @@ import SeccionContenido from './SeccionContenido';
 export default function ServiciosRed() {
   const [abierto, setAbierto] = useState(null);
 
-  // Asegúrate de que los nombres de los archivos aquí coincidan EXACTAMENTE con los de tu carpeta
   const pasos = [
     { 
       titulo: "14. Configuración IP del Cliente", 
-      desc: "Se configuró la dirección IP estática en el equipo cliente.", 
-      imgs: ["/docs_aranic/img_aranic/14. ip cliente.jpg"] 
+      desc: "Configuramos la dirección IP del equipo cliente para asegurar la conectividad con el servidor dentro del segmento de red establecido.", 
+      imgs: ["/docs_aranic/img_aranic/14. PC01 redlab.jpg"] 
     },
     { 
-      titulo: "15. Cambio de Nombre del Equipo", 
-      desc: "Se modificó el nombre del equipo cliente.", 
-      imgs: ["/docs_aranic/img_aranic/15. nombre equipo.jpg"] 
+      titulo: "15. Validación de Red", 
+      desc: "Ejecutamos el comando 'ipconfig' para verificar que el cliente haya recibido correctamente los parámetros de red y tenga comunicación con la infraestructura.", 
+      imgs: ["/docs_aranic/img_aranic/15. resultado ejec ipconfig.jpg"] 
     },
     { 
-      titulo: "16. Incorporación al Dominio", 
-      desc: "Se ingresó al dominio con credenciales de administrador.", 
-      imgs: ["/docs_aranic/img_aranic/16. union dominio.jpg"] 
+      titulo: "16. Sincronización de Tiempo", 
+      desc: "Verificamos la fecha y hora del sistema. La sincronización correcta es crítica para que el equipo cliente pueda autenticarse correctamente con el controlador de dominio.", 
+      imgs: ["/docs_aranic/img_aranic/16. fecha DVC.jpg", "/docs_aranic/img_aranic/16. hora pc.jpg"] 
     },
     { 
-      titulo: "17. Verificación en el Servidor", 
-      desc: "Se comprobó el cliente en Active Directory.", 
-      imgs: ["/docs_aranic/img_aranic/17. verificacion ad.jpg"] 
+      titulo: "17. Incorporación al Dominio", 
+      desc: "Realizamos el proceso de unión al dominio 'inacap.local' y validamos que el equipo aparezca registrado correctamente en el servidor.", 
+      imgs: ["/docs_aranic/img_aranic/17. unir dominio.jpg", "/docs_aranic/img_aranic/17. verificacion final dominio.jpg"] 
     }
   ];
 
@@ -36,7 +35,7 @@ export default function ServiciosRed() {
           <div key={i} className="backdrop-blur-md bg-white/60 border border-white/20 rounded-xl shadow-lg overflow-hidden">
             <button 
               onClick={() => setAbierto(abierto === i ? null : i)}
-              className="w-full text-left p-4 font-bold text-pink-900 flex justify-between items-center"
+              className="w-full text-left p-5 font-bold text-pink-900 flex justify-between items-center transition-colors hover:bg-white/40"
             >
               {paso.titulo}
               <motion.span animate={{ rotate: abierto === i ? 180 : 0 }}>▼</motion.span>
@@ -51,15 +50,14 @@ export default function ServiciosRed() {
                   className="border-t border-white/30"
                 >
                   <div className="p-6">
-                    <p className="mb-6 text-pink-900">{paso.desc}</p>
+                    <p className="mb-6 text-pink-900 leading-relaxed">{paso.desc}</p>
                     <div className="grid gap-4">
                       {paso.imgs.map((img, idx) => (
                         <img 
                           key={idx} 
                           src={img} 
-                          alt="Evidencia" 
-                          className="rounded-lg shadow-md w-full"
-                          onError={(e) => { e.target.style.display = 'none'; console.error("No se encontró la imagen:", img); }}
+                          alt={`Evidencia ${idx}`} 
+                          className="rounded-lg shadow-md w-full border border-pink-100" 
                         />
                       ))}
                     </div>

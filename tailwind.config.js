@@ -2,8 +2,7 @@
 export default {
   content: [
     "./index.html",
-    "./src/App.jsx",
-    "./src/main.jsx"
+    "./src/**/*.{js,ts,jsx,tsx}", // <--- ESTO ES LO MÁS IMPORTANTE
   ],
   theme: {
     extend: {},

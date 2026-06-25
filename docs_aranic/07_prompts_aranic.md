@@ -1,27 +1,27 @@
-Registro de Prompts - Configuración e Implementación
-Herramienta: Gemini (Google)
-Sección del proyecto: Configuración de entorno, Tailwind CSS y Estilizado de componentes React.
+Bitácora de Prompts (IA)
+I. Arquitectura y Estructura
+Prompt 1: Definición de Acordeón
+"Genera un componente React llamado 'Inicio.jsx' usando Tailwind CSS. El diseño debe ser un acordeón (useState) que contenga: título, descripción técnica de 3 párrafos y un array de imágenes en '/docs_aranic/img_aranic/'. Usa Framer Motion para las animaciones."
 
-Prompt 1 (Inicio de configuración):
+Prompt 2: Estandarización de Estilos
+"Crea una clase utilitaria personalizada para los contenedores de los pasos, aplicando fondo blanco con opacidad, desenfoque y bordes redondeados para mantener la consistencia visual."
 
-"Estoy configurando un proyecto React con Vite y Tailwind CSS v4. Ya logré la instalación pero tengo errores de 'Cannot apply unknown utility class' al intentar usar clases como bg-slate-900. Mi objetivo es tener un entorno funcional y, posteriormente, estilizar el proyecto con una paleta de tonos rosados basada en los estándares de Tailwind. Ayúdame a corregir la configuración de PostCSS y Vite para que el motor de Tailwind detecte correctamente mis clases en los archivos JSX."
+II. Contenido Técnico y Lógica
+Prompt 3: Documentación de AD DS
+"Redacta el contenido técnico para el paso 'Incorporación al Dominio'. Incluye requerimientos de DNS, unión al dominio 'inacap.local' y referencias a imágenes '17. unir dominio.jpg' y '17. verificacion.jpg'."
 
-Qué se aceptó: La modificación del archivo src/index.css para utilizar la directiva @import "tailwindcss"; en lugar de las directivas de versión 3.
+Prompt 4: Lógica de Estado Global
+"Analiza la estructura del acordeón: ¿Cómo puedo elevar el estado 'activeKey' a nivel de componente padre para que al abrir una sección se cierren automáticamente las demás?"
 
-Corrección y justificación: El error persistía porque la sintaxis antigua no era compatible con la versión 4 de Tailwind. Se justificó el cambio por la actualización a la sintaxis moderna que gestiona mejor las utilidades a través de PostCSS.
+Prompt 5: Optimización de UX
+"Mejora la interacción con Framer Motion: usa AnimatePresence para que la expansión y contracción de cada sección no sea brusca, definiendo estados iniciales con height: 0."
 
-Prompt 2 (Estilizado y diseño):
+III. Depuración y Robustez
+Prompt 6: Manejo de Errores Multimedia
+"Implementa manejo de errores en el renderizado de imágenes mediante el evento 'onError'. Si una imagen falla al cargar, muestra un placeholder."
 
-"Ahora que el motor de Tailwind funciona, quiero que la Wiki tenga tonos rosados para darle un aspecto moderno. ¿Cómo puedo organizar los colores usando la paleta de Tailwind (tonos 'pink') para que el diseño sea coherente, tenga buen contraste y sea profesional?"
+Prompt 7: Diagnóstico de Rutas
+"Error 'Failed to resolve import' detectado. Analiza la jerarquía de 'src/components/' y ajusta los imports en App.jsx para resolver la referencia correcta."
 
-Qué se aceptó: La implementación de una paleta basada en pink-50, pink-200 y pink-900.
-
-Corrección y justificación: Se corrigió el uso inicial de text-white para adaptarlo a un esquema de colores más específico y estético, aplicando clases como bg-pink-50 para el fondo y text-pink-900 para el texto, asegurando la legibilidad según las buenas prácticas de diseño.
-
-Prompt 3 (Creación del componente Navbar):
-
-"Necesito crear un componente Navbar.jsx para mi Wiki. Debe utilizar una estructura flex con Tailwind. El diseño debe mantener la paleta de tonos rosados definida anteriormente: fondo pink-100, bordes pink-200, y enlaces que cambien a pink-900 al pasar el mouse. Debe incluir 4 secciones: 'Inicio', 'Servidor', 'Configuración' y 'Contacto'. Genera el código manteniendo la legibilidad y siguiendo las buenas prácticas de React."
-
-Qué se aceptó: El componente Navbar.jsx con clases de espaciado y efectos de transición (transition, hover).
-
-Corrección y justificación: Se implementó max-w-6xl y mx-auto para centrar el contenido, asegurando que el menú se vea profesional en pantallas grandes. Se justificó el uso de pseudo-clases hover para mejorar la experiencia de usuario (UX) mediante retroalimentación visual al navegar.
+Reflexión Final.
+La IA funcionó como un agente de pair programming. Al gestionar 7 prompts de alta especificidad, pasé de una fase de estructuración base a una de optimización avanzada (lógica de estado y robustez). La clave fue tratar a la IA no como una "caja negra" que genera todo, sino como un colaborador que requiere instrucciones precisas sobre mi entorno de desarrollo. La validación final de la integridad de los datos de red y la jerarquía de archivos fue realizada manualmente por mí, asegurando que la wiki cumpliera con el rigor técnico del laboratorio.

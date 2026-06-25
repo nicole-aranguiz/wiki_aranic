@@ -1,18 +1,17 @@
-# 06. Políticas de Grupo (Bloque F)
+Se creó y vinculó el objeto de directiva de grupo GPO-Ventas en la Unidad Organizativa correspondiente.
 
-## 18. Creación de GPO
-Se creó y vinculó el objeto de directiva de grupo `GPO-Ventas` en la Unidad Organizativa correspondiente.
+Para qué sirve: Las GPOs (Group Policy Objects) son el mecanismo central de Windows Server para definir configuraciones estandarizadas a nivel de SO y aplicaciones. Al vincular el GPO a la OU Ventas, aseguramos que todas las restricciones y configuraciones se apliquen de forma automática y jerárquica a todos los usuarios contenidos en dicho contenedor.
 
 ![Creación del GPO](img_aranic/18. Creacion gp0 ventas.jpg)
-![GPO vinculado en la OU](img_aranic/18.%20creacion%20lista.jpg)
 
-## 19. Configuración de Restricciones
+19. Configuración de Restricciones
 Se editó el GPO para aplicar una restricción de usuario que impide el acceso a herramientas de configuración.
-* **Política:** "Prohibir el acceso a Configuración de PC y a Panel de control" configurada como **Habilitada**.
 
-![Configuración de la política](img_aranic/19.%20prohibir%20acceso.jpg)
+Política: "Prohibir el acceso a Configuración de PC y a Panel de control" configurada como Habilitada.
 
-## 20. Aplicación y Verificación
+Para qué sirve: Esta restricción es una medida de "fortalecimiento" (hardening) del puesto de trabajo. Al bloquear el acceso al Panel de Control y Configuración, evitamos modificaciones no autorizadas por parte de los usuarios, lo que garantiza la estabilidad de la configuración corporativa y reduce significativamente el riesgo de alteraciones malintencionadas o accidentales.
+
+20. Aplicación y Verificación
 Tras forzar la actualización de directivas en el cliente, se verificó el bloqueo del acceso al intentar abrir el Panel de Control.
 
-![Restricción aplicada en el cliente](img_aranic/20.%20prohibicion%20cliente%20panel%20de%20control.jpg)
+Para qué sirve: La ejecución de gpupdate /force es el paso esencial para forzar al cliente a solicitar las nuevas políticas al controlador de dominio sin esperar el intervalo de refresco automático. La verificación final confirma que la jerarquía de dominios, el servicio de DNS y la lógica de directivas están funcionando en perfecta sincronía.
