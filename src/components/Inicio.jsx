@@ -38,7 +38,7 @@ export default function Inicio() {
 
   return (
     <div className="bg-white p-8 rounded-2xl shadow-md">
-      <h2 className="text-2xl font-bold text-pink-900 mb-6">01. Servidor: Instalación y Configuración (Bloque A)</h2>
+      <h2 className="text-2xl font-bold text-pink-900 mb-6">01. Portada y topología</h2>
       <div className="space-y-4">
         {seccion.map((item) => (
           <div key={item.id} className="border border-pink-100 rounded-xl bg-pink-50 overflow-hidden">

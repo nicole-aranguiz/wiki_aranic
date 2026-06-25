@@ -18,7 +18,7 @@ export default function Cliente() {
   ];
 
   return (
-    <SeccionContenido titulo="04. Servidor DHCP">
+    <SeccionContenido titulo="04. Cliente en el dominio">
       <div className="space-y-4">
         {pasos.map((paso, i) => (
           <div key={i} className="border border-pink-200 rounded-xl overflow-hidden bg-white shadow-sm">

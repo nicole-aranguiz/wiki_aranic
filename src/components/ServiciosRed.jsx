@@ -29,7 +29,7 @@ export default function ServiciosRed() {
   ];
 
   return (
-    <SeccionContenido titulo="05. Incorporación al Dominio">
+    <SeccionContenido titulo="05. DNS y DHCP.">
       <div className="space-y-4">
         {pasos.map((paso, i) => (
           <div key={i} className="backdrop-blur-md bg-white/60 border border-white/20 rounded-xl shadow-lg overflow-hidden">
