@@ -6,6 +6,7 @@ import ActiveDirectory from './components/ActiveDirectory';
 import Prompts from './components/Prompts';
 import ClienteDominio from './components/ClienteDominio'; 
 import ServiciosRed from './components/ServiciosRed';
+import Gpo from './components/Gpo';
 
 
 
@@ -53,6 +54,7 @@ export default function App() {
           {seccionActiva === 'prompts' && <Prompts />}
           {seccionActiva === 'cliente' && <ClienteDominio />}
           {seccionActiva === 'servicios' && <ServiciosRed />}
+          {seccionActiva === 'gpo' && <Gpo />}
 
         </main>
       </div>
