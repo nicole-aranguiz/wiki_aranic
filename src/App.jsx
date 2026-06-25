@@ -5,6 +5,7 @@ import Instalacion from './components/Instalacion';
 import ActiveDirectory from './components/ActiveDirectory';
 import Prompts from './components/Prompts';
 import ClienteDominio from './components/ClienteDominio'; 
+import ServiciosRed from './components/ServiciosRed';
 
 
 
@@ -51,6 +52,8 @@ export default function App() {
           {seccionActiva === 'ad' && <ActiveDirectory />}
           {seccionActiva === 'prompts' && <Prompts />}
           {seccionActiva === 'cliente' && <ClienteDominio />}
+          {seccionActiva === 'servicios' && <ServiciosRed />}
+
         </main>
       </div>
     </div>
