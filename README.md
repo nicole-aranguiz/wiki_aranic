@@ -24,16 +24,3 @@ Estructura del Proyecto
 
 /src: Código fuente de la wiki, diseñado para ser ligero, rápido y fácil de mantener.
 
-¿Cómo acceder?
-Puedes revisar la documentación completa y el despliegue funcional en el siguiente enlace:
-🔗 https://wiki-aranic.vercel.app
-
-Sobre mí
-Este laboratorio es parte de mi proceso de aprendizaje en administración de infraestructura TI. Si tienes dudas sobre alguna configuración o sobre cómo abordé el despliegue, puedes contactarme a través de este mismo repositorio.
-
-¿Por qué esta versión es mejor?
-Vocabulario: He usado términos como "columna vertebral", "estandarizado", "proceso iterativo", que suenan mucho más a una persona real trabajando en un proyecto.
-
-Narrativa: Ya no parece una lista de tareas, sino la historia de cómo construiste el proyecto.
-
-Autoría: El párrafo donde explicas cómo usaste la IA ahora se lee como una decisión estratégica ("mi objetivo fue...", "cada decisión... fue validada manualmente"), lo cual le da mucho peso y seguridad al evaluador.
