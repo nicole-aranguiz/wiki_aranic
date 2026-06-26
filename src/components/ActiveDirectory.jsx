@@ -8,22 +8,22 @@ export default function ActiveDirectory() {
     { 
       titulo: "8. Acceso a Consola de Administración", 
       desc: "Iniciamos la gestión de objetos del dominio accediendo a la herramienta 'Usuarios y equipos de Active Directory', disponible en el menú de Herramientas del Administrador del servidor. Esta consola es la interfaz principal donde realizaremos todas las tareas de administración de nuestro dominio.", 
-      imgs: ["/docs_aranic/img_aranic/8. Active directory.jpg"] 
+      imgs: ["/img_aranic/8. Active directory.jpg"] 
     },
     { 
       titulo: "9. Creación de Unidad Organizativa (OU)", 
       desc: "Para mantener una estructura lógica y ordenada, creamos la Unidad Organizativa denominada 'Ventas'. Las OUs nos permiten agrupar usuarios y equipos para aplicar políticas de seguridad y configuración de manera más eficiente.", 
-      imgs: ["/docs_aranic/img_aranic/9. Ventas.jpg"] 
+      imgs: ["/img_aranic/9. Ventas.jpg"] 
     },
     { 
       titulo: "10. Creación de Usuarios", 
       desc: "Procedimos a crear dos cuentas de usuario dentro de la OU 'Ventas'. Durante la configuración inicial, desmarcamos la opción 'el usuario debe cambiar la contraseña en el próximo inicio', asegurando así que las cuentas estén listas para las pruebas del laboratorio de inmediato.", 
-      imgs: ["/docs_aranic/img_aranic/10. desmarcar .jpg", "/docs_aranic/img_aranic/10. usuarios creados.jpg"] 
+      imgs: ["/img_aranic/10. desmarcar .jpg", "/img_aranic/10. usuarios creados.jpg"] 
     },
     { 
       titulo: "11. Gestión de Grupos y Pertenencia", 
       desc: "Creamos el grupo de seguridad 'G-Ventas' e incorporamos a los usuarios previamente creados. Esta práctica permite gestionar permisos y recursos compartidos a nivel de grupo, simplificando la administración de accesos en el futuro.", 
-      imgs: ["/docs_aranic/img_aranic/11. creacion grupo.jpg", "/docs_aranic/img_aranic/11. usuario incorporado.jpg", "/docs_aranic/img_aranic/11. comprueba miembros.jpg"] 
+      imgs: ["/img_aranic/11. creacion grupo.jpg", "/img_aranic/11. usuario incorporado.jpg", "/img_aranic/11. comprueba miembros.jpg"] 
     }
   ];
 

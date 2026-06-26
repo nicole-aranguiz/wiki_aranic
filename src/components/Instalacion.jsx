@@ -8,12 +8,12 @@ export default function Instalacion() {
     { 
       titulo: "6. Instalación de Roles (AD DS)", 
       desc: "Iniciamos la configuración del servidor añadiendo el rol de 'Servicios de dominio de Active Directory' (AD DS). Esto se realizó desde el Administrador del servidor, accediendo al asistente de 'Agregar roles y características'. Al completar la instalación, el sistema quedó preparado para gestionar usuarios y equipos de forma centralizada.", 
-      imgs: ["/docs_aranic/img_aranic/6. administrador del servidor.jpg", "/docs_aranic/img_aranic/6. instalacion.jpg", "/docs_aranic/img_aranic/6. finalizacion instalacion.jpg"] 
+      imgs: ["/img_aranic/6. administrador del servidor.jpg", "/img_aranic/6. instalacion.jpg", "/img_aranic/6. finalizacion instalacion.jpg"] 
     },
     { 
       titulo: "7. Promoción a Controlador de Dominio", 
       desc: "Una vez instalado el rol, promocionamos el servidor a Controlador de Dominio para activar la gestión del dominio. Creamos un 'nuevo bosque' llamado 'inacap.local'. Tras finalizar el proceso y el reinicio automático del sistema, validamos el acceso iniciando sesión como 'INACAP\\Administrador', lo que confirma que el controlador está operativo y gestionando nuestro dominio.", 
-      imgs: ["/docs_aranic/img_aranic/7. controlador de dominio.jpg", "/docs_aranic/img_aranic/7. finalizacion inacap administrador.jpg"] 
+      imgs: ["/img_aranic/7. controlador de dominio.jpg", "/img_aranic/7. finalizacion inacap administrador.jpg"] 
     }
   ];
 

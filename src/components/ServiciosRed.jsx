@@ -9,22 +9,22 @@ export default function ServiciosRed() {
     { 
       titulo: "14. Configuración IP del Cliente", 
       desc: "Configuramos la dirección IP del equipo cliente para asegurar la conectividad con el servidor dentro del segmento de red establecido.", 
-      imgs: ["/docs_aranic/img_aranic/14. PC01 redlab.jpg"] 
+      imgs: ["/img_aranic/14. PC01 redlab.jpg"] 
     },
     { 
       titulo: "15. Validación de Red", 
       desc: "Ejecutamos el comando 'ipconfig' para verificar que el cliente haya recibido correctamente los parámetros de red y tenga comunicación con la infraestructura.", 
-      imgs: ["/docs_aranic/img_aranic/15. resultado ejec ipconfig.jpg"] 
+      imgs: ["/img_aranic/15. resultado ejec ipconfig.jpg"] 
     },
     { 
       titulo: "16. Sincronización de Tiempo", 
       desc: "Verificamos la fecha y hora del sistema. La sincronización correcta es crítica para que el equipo cliente pueda autenticarse correctamente con el controlador de dominio.", 
-      imgs: ["/docs_aranic/img_aranic/16. fecha DVC.jpg", "/docs_aranic/img_aranic/16. hora pc.jpg"] 
+      imgs: ["/img_aranic/16. fecha DVC.jpg", "/img_aranic/16. hora pc.jpg"] 
     },
     { 
       titulo: "17. Incorporación al Dominio", 
       desc: "Realizamos el proceso de unión al dominio 'inacap.local' y validamos que el equipo aparezca registrado correctamente en el servidor.", 
-      imgs: ["/docs_aranic/img_aranic/17. unir dominio.jpg", "/docs_aranic/img_aranic/17. verificacion final dominio.jpg"] 
+      imgs: ["/img_aranic/17. unir dominio.jpg", "/img_aranic/17. verificacion final dominio.jpg"] 
     }
   ];
 

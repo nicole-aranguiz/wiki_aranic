@@ -8,17 +8,17 @@ export default function Gpo() {
     { 
       titulo: "18. Creación de GPO", 
       desc: "Se creó y vinculó el objeto de directiva de grupo 'GPO-Ventas' en la Unidad Organizativa correspondiente.", 
-      imgs: ["/docs_aranic/img_aranic/18. Creacion gp0 ventas.jpg", "/docs_aranic/img_aranic/18. creacion lista.jpg"] 
+      imgs: ["/img_aranic/18. Creacion gp0 ventas.jpg", "/img_aranic/18. creacion lista.jpg"] 
     },
     { 
       titulo: "19. Configuración de Restricciones", 
       desc: "Se editó el GPO para aplicar una restricción de usuario. Política configurada: 'Prohibir el acceso a Configuración de PC y a Panel de control' en estado Habilitada.", 
-      imgs: ["/docs_aranic/img_aranic/19. prohibir acceso.jpg"] 
+      imgs: ["/img_aranic/19. prohibir acceso.jpg"] 
     },
     { 
       titulo: "20. Aplicación y Verificación", 
       desc: "Tras forzar la actualización de directivas (gpupdate /force) en el cliente, se verificó efectivamente el bloqueo del acceso al intentar abrir el Panel de Control.", 
-      imgs: ["/docs_aranic/img_aranic/20. prohibicion cliente panel de control.jpg"] 
+      imgs: ["/img_aranic/20. prohibicion cliente panel de control.jpg"] 
     }
   ];
 
